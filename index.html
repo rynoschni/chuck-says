@@ -6,6 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div class="container">
+            <div class="image_holder"> <img src="css/6c4c89bcba14f5419f8312a0efc76911dcd9a589.jpg"/>
+            </div>
+            <div class="heading">
+                <h1>Chuck Says:</h1>
+            </div>
+            <p id="chuckSays" class="chuckSays"></p>
+            
+            <button id="refreshQuote">Take another swing!</button>
+            <form>
+                <label>
+                    Choose a Category
+                    <input type='text' value="" id="categoryInput" name="categoryInput" required placeholder="Choose a Category"/>
+                </label>
+                <button type="submit" id='submitForm'>New Category Quote</button>
+            </form>
+        </div>
     </body>
+    <script src="js/get.js"></script>
+    <script src="js/index.js"></script>
 </html>
