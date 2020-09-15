@@ -6,15 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div class="container">
+        <div class="wrapper">
             <div class="image_holder"> <img src="css/6c4c89bcba14f5419f8312a0efc76911dcd9a589.jpg"/>
             </div>
             <div class="heading">
                 <h1>Chuck Says:</h1>
             </div>
-            <p id="chuckSays" class="chuckSays"></p>
             
-            <button id="refreshQuote">Take another swing!</button>
             <form id="getChuckQuote">
                 <label>
                     Choose a Category
@@ -23,6 +21,13 @@
                 </label>
                 <button type="submit" id='submitForm'>New Category Quote</button>
             </form>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <span id="closeModal" class="modal-close">X</span>
+                <p id="chuckSays" class="chuck-says"></p>
+                <button id="refreshQuote">Take another swing!</button>
+            </div>
         </div>
     </body>
     <script src="js/get.js"></script>

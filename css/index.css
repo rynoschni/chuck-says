@@ -12,10 +12,49 @@ body{
     padding: 0;
 }
 
-.chuckSays{
-    font-size: 2rem;
-    
+.wrapper {
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 100%;
 }
-/* .image-holder {
-    background-image: url(css/6c4c89bcba14f5419f8312a0efc76911dcd9a589.jpg)
+
+.image-holder {
+    height: auto;
+    width: 100%;
+
+}
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    display: none;
+    left: 0;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+}
+.modal-overlay.open{
+    display: flex;
+}
+.modal-content{
+    background-color: #fff;
+    border-radius: 6px;
+    margin: auto;
+    max-width: 400px;
+    padding: 8px;
+    position: relative;
+    text-align: center;
+    z-index: 20;
+}
+.modal-close{
+    float: right;
+    /* background-image: url('fist-bump.png'); */
+    /* height: auto;
+    width: 50px; */
+}
+/* .close-img{
+    height: auto;
+    width: 20px;
 } */
